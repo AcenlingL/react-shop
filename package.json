@@ -2,7 +2,7 @@
   "name": "1-shopping-1",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://AcenlingL.github.io/",
+  "homepage":"http://AcenlingL.github.io/react-shop",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
