@@ -6,7 +6,7 @@ class Home extends Component {
   renderProduct(p) {
 
     return (
-      <div className="col-lg-4 col-md-6 mb-4">
+      <div key={p.id} className="col-lg-4 col-md-6 mb-4">
         <div className="card h-100">
           <Link to={{
             pathname: `/Product/${p.id}`,

@@ -1,4 +1,4 @@
-const API = '/api/drinks.json';
+const API = './api/drinks.json';
 // http://localhost:3000/api/drinks.json
 
 /**

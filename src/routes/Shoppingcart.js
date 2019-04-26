@@ -6,9 +6,16 @@ class Shoppingcart extends Component {
         const productquantity = Cookies.get(x.name)
         console.log(x)
         if (productquantity === undefined) {
-            return ""
+            return null;
         } else {
-            return <tr> <td><img className="shoppingcartimg" src={x.picture} width="250px" height="200px" alt="" /> </td><td>商品名稱:{x.name} </td> <td>數量:{productquantity} </td> <td>價格{x.price * productquantity}</td></tr>
+            return (
+                <tr key={x.id}>
+                    <td><img className="shoppingcartimg" src={x.picture} width="250px" height="200px" alt="" /></td>
+                    <td>商品名稱:{x.name}</td>
+                    <td>數量:{productquantity}</td>
+                    <td>價格{x.price * productquantity}</td>
+                </tr>
+            )
         }
     }
 
@@ -25,7 +32,9 @@ class Shoppingcart extends Component {
                     <h1 >購物車列表:</h1>
 
                     <table border="1" width="600px" height="500px">
-                        {productinfo.map(x => this.ShowItem(x))}
+                        <tbody>
+                            {productinfo.map(x => this.ShowItem(x))}
+                        </tbody>
                     </table>
                 </center>
             </div>
