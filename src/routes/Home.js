@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Shoppingcarforhome from '../components/Shoppingcar';
+
 class Home extends Component {
 
   renderProduct(p) {

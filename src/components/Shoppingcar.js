@@ -5,7 +5,7 @@ class Shoppingcar extends Component {
     const productinfo = this.props.product
     const productname = Cookies.get(productinfo.name)
 
-    var productquantity = parseInt(Cookies.get(productinfo.name))
+    let productquantity = parseInt(Cookies.get(productinfo.name))
 
     if (productname === undefined) {
       Cookies.set(productinfo.name, 1)
